@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ============================
 // Firebase / Firestore setup
 // ============================
@@ -166,3 +167,12 @@ if (contactForm) {
 // init on load
 updateProgressBar();
 updateActiveLink();
+=======
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    alert("Message Sent Successfully!");
+});
+>>>>>>> c0e8ebc0d40694ca259648701b68b59dd350e82e
