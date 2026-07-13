@@ -1,142 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samir Portfolio</title>
-    <meta name="description" content="Official portfolio website of Samir Chaudhary. Web developer, designer, and BCA student creating modern and interactive websites.">
-    <meta name="keywords" content="Samir Chaudhary, portfolio, web developer, frontend developer, BCA student, HTML CSS JavaScript, Nepal">
-    <meta name="author" content="Samir Chaudhary">
-    <meta property="og:type" content="website">
-    <link rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samir Chaudhary — Frontend Developer</title>
+<meta name="description" content="Portfolio of Samir Chaudhary. Frontend developer and BCA student in Nepal, building modern, interactive websites — including the CSA MMC Dang platform.">
+<meta name="keywords" content="Samir Chaudhary, portfolio, web developer, frontend developer, BCA student, HTML CSS JavaScript, Nepal, CSA MMC Dang">
+<meta name="author" content="Samir Chaudhary">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Samir Chaudhary — Frontend Developer">
+<meta property="og:description" content="Frontend developer and BCA student building modern, interactive websites.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <h1 class="logo">Samir</h1>
+<div class="progress-bar" id="progressBar"></div>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Navbar -->
+<header id="header">
+  <nav>
+    <a href="#home" class="logo">Samir</a>
 
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <ul id="navMenu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <div class="hero-text">
-            <h3>WEB DEVELOPER</h3>
-            <h1>Hi, I'm <span>Samir Chaudhary</span></h1>
-
-            <p>
-                A passionate BCA student who loves creating modern and interactive websites.
-            </p>
-
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
+<div class="nav-backdrop" id="navBackdrop"></div>
 
 
-        <div class="hero-image">
-            <img src="pp1.jpg" alt="profile">
-        </div>
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Frontend developer &middot; BCA Student &middot; Dang, Nepal</p>
+      <h1>Hi, I'm <span class="highlight">Samir Chaudhary</span></h1>
+      <p class="hero-sub">I build clean, interactive websites — from admin dashboards to
+        community platforms — with a habit of chasing the small details until they feel right.</p>
 
-    </section>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
 
-
-    <!-- About -->
-    <section class="about" id="about">
-
-        <div class="about-image">
-            <img src="pp2.jpeg" alt="about image">
-        </div>
-
-
-        <div class="about-text">
-            <h2>About Me</h2>
-
-            <p>
-                I'm a creative developer and designer passionate about frontend development,
-                UI/UX design, and building beautiful web experiences.
-            </p>
-
-            <p>
-                Currently studying BCA and improving my skills in HTML, CSS,
-                JavaScript and modern web technologies.
-            </p>
-        </div>
-
-    </section>
-
-
-    <!-- Skills -->
-    <section class="skills" id="skills">
-
-        <h2>My Skills</h2>
-
-        <div class="skill-boxes">
-            <div class="box">HTML</div>
-            <div class="box">CSS</div>
-            <div class="box">JavaScript</div>
-            <div class="box">C Programming</div>
-            <div class="box">GitHub</div>
-            <div class="box">UI/UX Design</div>
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section class="projects" id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="project-container">
-
-            <div class="project-card">
-                <img src="comingsoon.jpg">
-                <h3>Coming-Soon</h3>
-                <p>.............</p>
-            </div>
-
-
-            <div class="project-card">
-                <img src="comingsoon.jpg">
-                <h3>Coming-Soon</h3>
-                <p>.............</p>
-            </div>
-
-
-            <div class="project-card">
-                <img src="comingsoon.jpg">
-                <h3>Coming-Soon</h3>
-                <p>.............</p>
-            </div>
-
-        </div>
-    <section class="contact" id="contact">
-    <h2 style=" padding-top: 25px;">Contact Me</h2>
-
-    <!-- Social Icons -->
-    <div class="social-icons">
-        <a href="https://www.facebook.com/samir.satgauwa.75" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/samirsatgauwa/" target="_blank">Instagram</a>
-        <a href="https://github.com/Samir0-a" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">0</span><span class="stat-label">Live Projects</span></div>
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Core Skills</span></div>
+      </div>
     </div>
+
+    <div class="hero-visual">
+      <div class="photo-frame">
+        <img src="pp1.jpg" alt="Samir Chaudhary" width="360" height="360">
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About"><span></span></a>
 </section>
+
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="section-head">
+    <p class="eyebrow">About</p>
+    <h2>Who I Am</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-image">
+      <img src="pp2.jpeg" alt="Samir Chaudhary" width="450" height="400" loading="lazy">
+    </div>
+
+    <div class="about-text">
+      <p>
+        I'm a creative frontend developer and designer from Dang, Nepal, currently studying
+        <strong>BCA</strong>. I like turning plain requirements into interfaces that feel considered —
+        smooth transitions, sensible dark mode, and layouts that hold up on any screen.
+      </p>
+
+      <div class="about-facts">
+        <div class="fact"><span class="fact-label">Focus</span><span class="fact-value">Frontend &amp; UI/UX</span></div>
+        <div class="fact"><span class="fact-label">Studying</span><span class="fact-value">BCA</span></div>
+        <div class="fact"><span class="fact-label">Location</span><span class="fact-value">Dang, Nepal</span></div>
+        <div class="fact"><span class="fact-label">Currently</span><span class="fact-value">CSA MMC Dang Web Team</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills -->
+<section class="skills" id="skills">
+  <div class="section-head">
+    <p class="eyebrow">Skills</p>
+    <h2>What I Work With</h2>
+  </div>
+
+  <div class="skill-boxes">
+    <div class="box">
+      <span class="box-icon">&lt;/&gt;</span>
+      <h3>HTML</h3>
+      <p>Semantic, accessible markup</p>
+    </div>
+    <div class="box">
+      <span class="box-icon">#</span>
+      <h3>CSS</h3>
+      <p>Responsive layouts, theming</p>
+    </div>
+    <div class="box">
+      <span class="box-icon">{}</span>
+      <h3>JavaScript</h3>
+      <p>DOM, events, interactivity</p>
+    </div>
+    <div class="box">
+      <span class="box-icon">C</span>
+      <h3>C Programming</h3>
+      <p>Core logic &amp; fundamentals</p>
+    </div>
+    <div class="box">
+      <span class="box-icon">&#9737;</span>
+      <h3>GitHub</h3>
+      <p>Version control &amp; collaboration</p>
+    </div>
+    <div class="box">
+      <span class="box-icon">&#9670;</span>
+      <h3>UI/UX Design</h3>
+      <p>Interfaces people enjoy using</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section class="projects" id="projects">
+  <div class="section-head">
+    <p class="eyebrow">Projects</p>
+    <h2>Selected Work</h2>
+  </div>
+
+  <div class="project-container">
+    <div class="project-card">
+      <img src="comingsoon.jpg" alt="Upcoming project" loading="lazy">
+      <div class="project-body">
+        <h3>Coming Soon</h3>
+        <p>Next build in progress — check back soon.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="comingsoon.jpg" alt="Upcoming project" loading="lazy">
+      <div class="project-body">
+        <h3>Coming Soon</h3>
+        <p>Next build in progress — check back soon.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="section-head">
+    <p class="eyebrow">Contact</p>
+    <h2>Get In Touch</h2>
+    <p class="contact-sub">Have a project in mind or just want to say hi? Reach out below.</p>
+  </div>
+ 
+  <div class="contact-grid">
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about it..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+    </form>
+ 
+    <div class="social-icons">
+      <a href="https://www.facebook.com/samir.satgauwa.75" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/>
+        </svg>
+        <span class="sr-only">Facebook</span>
+      </a>
+      <a href="https://www.instagram.com/samirsatgauwa/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <rect x="2.5" y="2.5" width="19" height="19" rx="5"/>
+          <circle cx="12" cy="12" r="4.6"/>
+          <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/>
+        </svg>
+        <span class="sr-only">Instagram</span>
+      </a>
+      <a href="https://github.com/Samir0-a" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.34 9.34 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.92-2.35 4.79-4.58 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/>
+        </svg>
+        <span class="sr-only">GitHub</span>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M4.98 3.5C4.98 4.88 3.93 6 2.5 6S0 4.88 0 3.5 1.07 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.83v1.98h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.14V23h-4v-6.68c0-1.6-.03-3.65-2.22-3.65-2.23 0-2.57 1.74-2.57 3.53V23h-4V8.5z"/>
+        </svg>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <footer>
-    <p>© 2026 <span>Samirchaudhary</span> | All Rights Reserved.</p>
+  <p>&copy; 2026 <span>Samir Chaudhary</span> | All Rights Reserved.</p>
 </footer>
 
-
-    <script src="script.js"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
